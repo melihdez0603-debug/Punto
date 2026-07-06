@@ -3,7 +3,7 @@ namespace Punto.Forms
     partial class frmLogin
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblUser;
@@ -19,7 +19,7 @@ namespace Punto.Forms
 
         private void InitializeComponent()
         {
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
@@ -28,12 +28,13 @@ namespace Punto.Forms
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtUser
+            // txtUsuario
             // 
-            this.txtUser.Location = new System.Drawing.Point(30, 48);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(240, 20);
-            this.txtUser.TabIndex = 1;
+            this.txtUsuario.Location = new System.Drawing.Point(30, 48);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(240, 20);
+            this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // txtPassword
             // 
@@ -66,6 +67,7 @@ namespace Punto.Forms
             this.lblUser.Size = new System.Drawing.Size(80, 20);
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "Usuario:";
+            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
             // 
             // lblPassword
             // 
@@ -79,7 +81,7 @@ namespace Punto.Forms
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblUser);
-            this.panel1.Controls.Add(this.txtUser);
+            this.panel1.Controls.Add(this.txtUsuario);
             this.panel1.Controls.Add(this.lblPassword);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.btnLogin);

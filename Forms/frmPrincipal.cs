@@ -30,5 +30,10 @@ namespace Punto.Forms
         {
             AbrirFormulario(typeof(frmProductos));
         }
+
+        private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
