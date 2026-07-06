@@ -19,7 +19,6 @@ namespace Punto.Forms
         }
         private void CargarProductos()
         {
-            // Código para llenar el DataGridView
             try
             {
                 MySqlConnection conexion = con.ObtenerConexion();
